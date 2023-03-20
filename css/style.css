@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --white-color: hsl(0, 0%, 100%);
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --hover-blue: hsl(245, 54%, 75%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  text-align: center;
+
+  background: url("../images/pattern-background-desktop.svg") no-repeat top/contain;
+  background-color: var(--pale-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+   text-decoration: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 370px;
+  background-color: var(--white-color);
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-info {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image */
+.hero {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  margin-bottom: 15px;
+}
+
+/* Content area */
+.content h1 {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: var(--desaturated-blue);
+  margin-bottom: 20px;
+}
+
+/* Plan selection */
+
+.plan-selection {
+  display: flex;
+  background-color: var(--very-pale-blue);
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border-radius: 5px;
+  padding: 15px 25px;
+  margin-bottom: 20px;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+}
+
+.music-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.plan-description p, h2 {
+  font-size: 14px
+}
+
+.plan-description p {
+  color: var(--desaturated-blue);
+}
+
+.plan-changer {
+  color: var(--bright-blue);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.plan-changer:hover {
+  text-decoration: none;
+  color: var(--hover-blue);
+}
+
+/* Buttons */
+
+.proceed-btn {
+  display: block;
+  background-color: var(--bright-blue);
+  font-weight: 700;
+  color: var(--white-color);
+  width: 90%;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0px 7px 29px 0px rgba(56,41,224,0.4);
+  margin-bottom: 20px;
+}
+
+.cancel-btn {
+  display: inline-block;
+  color: var(--desaturated-blue);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.proceed-btn:hover {
+  background-color: var(--hover-blue);
+}
+
+.cancel-btn:hover {
+  color: var(--dark-blue);
+}
